@@ -90,12 +90,14 @@ a {
 }
 
 .background-start {
-    position:relative;
+    display: flex;
+    position:sticky;
     margin-left: auto;
     margin-top: auto;
     width: 40%;
     height: auto;
     z-index: -1;
+    background-color: yellow;
 }
 
 /* ME */
