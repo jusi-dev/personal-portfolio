@@ -90,7 +90,7 @@ a {
 }
 
 .background-start {
-    position:sticky;
+    position:relative;
     margin-left: auto;
     margin-top: auto;
     width: 40%;
