@@ -77,7 +77,9 @@ a {
     height: 100vh;
     user-select: none;
     -webkit-user-select: none;
-    background-color: rgba(0, 240, 212, 0.163);
+    background-color: rgba(240, 0, 240, 0.163);
+    position:static;
+    overflow: hidden;
 }
 
 .welcome-text {
