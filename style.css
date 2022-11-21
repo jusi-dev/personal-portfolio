@@ -2,6 +2,7 @@ body {
     margin: auto 0;
     padding: auto 0;
     font-family: 'Inter', sans-serif;
+    font-size: 16px;
 
     background-color: #0E1313;
     font-size: 16px;
@@ -142,11 +143,36 @@ a {
 }
 
 .certification {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   border: 10px solid #7000FF;
   border-radius: 24px;
   margin: 60px 70px 0px 70px;
-  height: 60vh;
+  height: auto;
+}
+
+@media only screen and (max-width: 896px) {
+  .certification {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+.box {
+  vertical-align: top;
+  display: inline-block;
+  margin: 20px auto auto auto;
+  padding: 0px 0px 50px 0px;
+  text-align: center;
+}
+
+.box > img {
+  width: 60%;
+  height: auto;
+}
+
+.box h3 {
+  display: block;
 }
 
 h1 {
