@@ -78,7 +78,6 @@ a {
     min-height: 100vh;
     user-select: none;
     -webkit-user-select: none;
-    background-color: rgba(240, 0, 0, 0.163);
 }
 
 .welcome-text {
@@ -92,14 +91,12 @@ a {
 }
 
 .background-start {
-    display:inline-block;
-    position:sticky;
+    display: flex;
     margin-left: auto;
     margin-top: auto;
     width: 40%;
     height: auto;
     z-index: -1;
-    background-color: yellow;
 }
 
 /* ME */
