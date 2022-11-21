@@ -100,8 +100,9 @@ a {
 /* ME */
 
 .myself {
-  display: flex;
+  display: grid;
   margin: 100px 70px 0px 70px;
+  grid-template-columns: 1fr 1fr;
 }
 
 .location {
@@ -154,7 +155,51 @@ a {
   .certification {
     display: grid;
     grid-template-columns: 1fr;
+    margin: 30px 30px 0px 30px;
   }
+
+  .myself {
+    display: grid;
+    margin: 100px 30px 0px 30px;
+    grid-template-columns: 1fr;
+  }
+
+  .location {
+    display: inline-block;
+    vertical-align: top;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+  }
+
+  .location h2 {
+    display: block;
+    padding: 0px 0px 0px 20px;
+  }
+
+  .age {
+    display: inline-block;
+    vertical-align: top;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+  }
+
+  .age h2 {
+    display: block;
+    padding: 0px 20px 0px 0px;
+    text-align: center;
+  }
+
+  .welcome-text {
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px 0px 30px;
+    width: 80%;
+    height: 70%;
+    vertical-align: top;
+    flex-direction: column;
+}
 }
 
 @media only screen and (max-width: 876px) {
