@@ -90,6 +90,7 @@ a {
 }
 
 .background-start {
+    position:sticky;
     margin-left: auto;
     margin-top: auto;
     width: 40%;
@@ -130,9 +131,10 @@ a {
   margin-left: auto;
 }
 
-.age > img {
+.age img {
   width: 45%;
   height: auto;
+  margin-right: auto;
 }
 
 .age h2 {
@@ -254,13 +256,13 @@ p {
     vertical-align: top;
     align-items: center;
     justify-content: center;
+    text-align: center;
     width: auto;
   }
 
   .age h2 {
     display: block;
     padding: 0px 20px 0px 0px;
-    text-align: center;
   }
 
   .welcome-text {
