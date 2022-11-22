@@ -124,7 +124,7 @@ a {
   display: grid;
   margin: 100px 70px 0px 70px;
   grid-template-columns: 1fr 1fr;
-  background-color: yellow;
+  background-color: green;
 }
 
 .location {
