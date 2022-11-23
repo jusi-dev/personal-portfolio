@@ -85,7 +85,7 @@ a {
     height: var(--app-height);*/
     user-select: none;
     -webkit-user-select: none;
-    background-color: rgba(6, 82, 6, 0.279);
+    background-color: rgba(223, 20, 111, 0.279);
 }
 
 .welcome-text {
