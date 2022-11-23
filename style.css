@@ -85,7 +85,7 @@ a {
     min-height: 100vh;
     user-select: none;
     -webkit-user-select: none;
-    background-color: rgba(6, 82, 6, 0.279);
+    /*background-color: rgba(6, 82, 6, 0.279);*/
 }
 
 .welcome-text {
