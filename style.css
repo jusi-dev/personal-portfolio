@@ -78,14 +78,14 @@ a {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
-    max-height: -webkit-fill-available;
-    height: fill-available;
-    height: var(--app-height);
     min-height: 100vh;
+    height: -webkit-fill-available;
+    /*max-height: -webkit-fill-available;
+    height: fill-available;
+    height: var(--app-height);*/
     user-select: none;
     -webkit-user-select: none;
-    /*background-color: rgba(6, 82, 6, 0.279);*/
+    background-color: rgba(6, 82, 6, 0.279);
 }
 
 .welcome-text {
