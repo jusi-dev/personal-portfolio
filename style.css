@@ -79,7 +79,7 @@ a {
     overflow: hidden;
     user-select: none;
     -webkit-user-select: none;
-    background-color: rgba(223, 20, 111, 0.279);
+    /*background-color: rgba(223, 20, 111, 0.279);*/
 }
 
 .welcome-text {
@@ -317,6 +317,7 @@ p {
     transform: translate(-50%, -50%);
     
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     width: 100vw;
     min-width: 100vw;
     z-index:-2;
