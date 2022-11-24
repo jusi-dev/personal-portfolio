@@ -78,7 +78,7 @@ a {
     overflow: hidden;
     user-select: none;
     -webkit-user-select: none;
-    background-color: rgba(223, 20, 111, 0.279);
+    /*background-color: rgba(223, 20, 111, 0.279);*/
 }
 
 .welcome-text {
@@ -145,21 +145,23 @@ a {
 .age {
   display: flex;
   align-items: center;
-  width: 30vw;
+  width: auto;
   margin-left: auto;
 }
 
 .age img {
-  width: 45%;
+  order: 2;
+  width: 35%;
   height: auto;
-  margin-right: auto;
 }
 
 .age h2 {
+  order: 1;
   display: inline-block;
   padding: 0px 20px 0px 0px;
   text-align: right;
-  margin-left: auto;
+  margin-left: auto;;
+
 }
 
 .certification {
@@ -285,7 +287,7 @@ p {
 
   .age h2 {
     display: block;
-    padding: 0px 20px 0px 0px;
+    padding: 0px 0px 0px 0px;
     text-align: center;
   }
 
