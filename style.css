@@ -366,11 +366,28 @@ p {
 
   .nav-elem {
     margin: 16px 0;
+    transition: 2s;
   }
 
   .main-nav.active {
     right: 0;
     width: 40%;
+  }
+
+  .burger-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.1em;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50vh;
   }
 }
 
