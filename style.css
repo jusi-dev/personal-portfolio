@@ -376,18 +376,23 @@ p {
 
   .burger-wrapper {
     display: flex;
+    position: fixed;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    white-space: nowrap;
     gap: 20px;
     font-size: 1.1em;
+    margin-right: 10%;
+    top: 20%;
   }
 
   .icons {
     display: flex;
+    position: fixed;
     justify-content: center;
     align-items: center;
-    margin-top: 50vh;
+    top: 80%;
   }
 }
 
