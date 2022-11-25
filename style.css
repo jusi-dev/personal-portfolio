@@ -79,6 +79,10 @@ a {
     color: #5800CA;
 }
 
+.nav-elem.active {
+  color: #5800CA;
+}
+
 .hamburger {
   display: none;
   cursor: pointer;
