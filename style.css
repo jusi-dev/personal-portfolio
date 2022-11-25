@@ -27,6 +27,17 @@ body {
     -webkit-user-select: none;
 }
 
+.burger-wrapper {
+  display: inherit;
+  list-style: inherit;
+}
+
+.icons {
+  display: inherit;
+  margin: inherit;
+  width: inherit;
+}
+
 ul {
     justify-content: center;
     align-items: center;
@@ -51,7 +62,7 @@ ul {
 }
 
 .last {
-    padding: 0px 50px 0px 10px;
+    padding: 10px 50px 0px 10px;
 }
 
 a {
@@ -110,28 +121,12 @@ a {
     vertical-align: top;
     flex-direction: column;
 }
-/*
-.start-bg {
-  display: flex;
-    margin-left: auto;
-    margin-top: auto;
-    width: 90vh;
-    height: auto;
-
-    z-index: -1;
-}
-
-.start-bg > img {
-  width: 100%;
-  height: auto;
-}*/
 
 .background-start {
     display: flex;
     margin-left: auto;
     margin-top: auto;
     width: 40%;
-    /*width: -webkit-fill-available;*/
     height: auto;
     z-index: -1;
 }
@@ -329,7 +324,7 @@ p {
 
   .hamburger-bar {
     display: flex;
-    padding: 30px
+    padding: 40px 30px 30px 30px;
   }
 
   .hamburger {
@@ -383,7 +378,7 @@ p {
     white-space: nowrap;
     gap: 20px;
     font-size: 1.1em;
-    margin-right: 10%;
+    margin-right: 5%;
     top: 20%;
   }
 
@@ -393,6 +388,10 @@ p {
     justify-content: center;
     align-items: center;
     top: 80%;
+  }
+
+  .last {
+    padding: 00px 50px 0px 10px;
   }
 }
 
