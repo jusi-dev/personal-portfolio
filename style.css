@@ -363,7 +363,8 @@ p {
     top: 0px;
     gap: 10px;
     flex-direction: column;
-    background-color: #5800ca78;
+    background: #5800ca78;
+    background: linear-gradient(180deg, rgba(112,0,255,0.5088629201680672) 0%, rgba(42,3,92,0.486453956582633) 71%);
     width: 100%;
     height: 100%;
     text-align: center;
