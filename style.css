@@ -333,7 +333,8 @@ p {
     flex-direction: column;
   }
   .start {
-    height: calc(var(--vh, 1vh) * 100);
+    /*height: calc(var(--vh, 1vh) * 100);*/
+    height: 100dvh;
   }
 
   .initials {
@@ -419,7 +420,8 @@ p {
     font-size: 80%;
   }
   .start {
-    height: calc(var(--vh, 1vh) * 100);
+    /*height: calc(var(--vh, 1vh) * 100);*/
+    height: 100dvh;
   }
 }
 
@@ -428,7 +430,8 @@ p {
     font-size: 60%;
   }
   .start {
-    height: calc(var(--vh, 1vh) * 100);
+    /*height: calc(var(--vh, 1vh) * 100);*/
+    height: 100dvh;
   }
 }
 
