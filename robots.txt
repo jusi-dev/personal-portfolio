@@ -1,0 +1,4 @@
+# robots.txt to https://justin-winistoerfer.dev/
+
+User-agent: *
+Allow: /
