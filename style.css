@@ -21,6 +21,11 @@ html {
     width: 100%;
 }
 
+.scrolled {
+  transition: 0.3s ease-in-out;
+  background-color: #0E1313;
+}
+
 .main-nav {
     display: flex;
     list-style: none;
@@ -81,7 +86,7 @@ a {
 }
 
 .nav-elem:hover{
-    color: #5800CA;
+    color: #9043f6;
 }
 
 .nav-elem.active {
@@ -143,16 +148,24 @@ a {
 /* ME */
 
 .me {
-  padding-bottom: 100px;
+  padding-bottom: 70px;
+  padding-top: 60px;
 }
 
 .me > h2 {
   display: flex;
   font-size: 2.5em;
   justify-content: center;
-  padding-top: 60px;
-  text-shadow: 2px 0 #7000FF, -2px 0 #7000FF, 0 2px #7000FF, 0 -2px #7000FF,
-               1px 1px #7000FF, -1px -1px #7000FF, 1px -1px #7000FF, -1px 1px #7000FF;
+  padding-top: 30px;
+  text-align: center;
+  /*text-decoration: underline solid #5800CA;
+  text-underline-offset: 10px;*/
+}
+
+.about-me {
+  display: inline-block;
+  border-bottom: 4px solid #5800CA;
+  padding: 5px 18px;
 }
 
 .myself {
@@ -169,7 +182,7 @@ a {
 }
 
 .location > img {
-  width: 35%;
+  width: 30%;
   height: auto;
 }
 
@@ -188,7 +201,7 @@ a {
 
 .age img {
   order: 2;
-  width: 35%;
+  width: 31%;
   height: auto;
 }
 
@@ -244,7 +257,7 @@ a {
 .contact {
   width: 100vw;
   height: 60vh;
-  padding-top: 80px;
+  padding-top: 110px;
 }
 
 .contact-text {
@@ -299,6 +312,8 @@ a {
   width: 100vw;
   justify-content: center;
   background-color: #5800CA;
+  background: linear-gradient(180deg, rgba(88,0,202,1) 56%, rgba(47,0,107,1) 100%);
+  backdrop-filter: blur(10px);
   user-select: none;
   -webkit-user-select: none;
 }
@@ -316,22 +331,18 @@ a {
 .footer-list > li:nth-child(1) {
   text-align: left;
   padding: 20px 20px 20px 70px;
-  /*margin-right: auto;*/
   width: auto;
 }
 
 .footer-list > li:nth-child(2) {
   padding: 20px;
   width: auto;
-  /*margin-left: auto;
-  margin-right: auto;*/
 }
 
 .footer-list > li:nth-child(3) {
   text-align: right;
   padding: 20px 70px 20px 20px;
   width: auto;
-  /*margin-left: auto;*/
 }
 
 h1 {
@@ -486,23 +497,27 @@ p {
   }
 
   .footer-list > li:nth-child(1) {
-    text-align: left;
+    text-align: center;
+    order: 1;
     padding: 10px 20px;
-    /*margin-right: auto;*/
+    font-size: 1.2em;
     width: auto;
   }
   
   .footer-list > li:nth-child(2) {
     padding: 10px;
+    order: 3;
     width: auto;
     text-align: center;
+    font-size: 1.2em;
   }
   
   .footer-list > li:nth-child(3) {
-    text-align: right;
+    text-align: center;
+    order: 2;
     padding: 10px 20px;
     width: auto;
-    /*margin-left: auto;*/
+    font-size: 1.2em;
   }
 
   .welcome-text {
