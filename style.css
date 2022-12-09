@@ -1,8 +1,3 @@
-html {
-  scroll-snap-type: mandatory;
-  scroll-snap-type: y mandatory;
-}
-
 body {
     margin: auto 0;
     padding: auto 0;
@@ -123,7 +118,6 @@ a {
     overflow: hidden;
     user-select: none;
     -webkit-user-select: none;
-    scroll-snap-align: start;
     /*background-color: rgba(223, 20, 111, 0.279);*/
 }
 
@@ -149,7 +143,6 @@ a {
 /* ME */
 
 .me {
-  scroll-snap-align: start;
   padding-bottom: 100px;
 }
 
@@ -204,7 +197,7 @@ a {
   display: inline-block;
   padding: 0px 20px 0px 0px;
   text-align: right;
-  margin-left: auto;;
+  margin-left: auto;
 }
 
 .certification {
@@ -248,20 +241,74 @@ a {
   align-items: center;
 }
 
+.contact {
+  width: 100vw;
+  height: 60vh;
+  padding-top: 80px;
+}
+
+.contact-text {
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.mail-contact {
+  display: flex;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.mail-contact p {
+  display: inline-block;
+}
+
+.mail-contact > img {
+  width: 80px;
+  height: auto;
+  padding-right: 30px;
+}
+
+.telephone-contact {
+  display: flex;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.telephone-contact p {
+  display: inline-block;
+}
+
+.telephone-contact > img {
+  width: 80px;
+  height: auto;
+  padding-right: 30px;
+}
+
 .footer {
   display: flex;
   width: 100vw;
   justify-content: center;
   background-color: #5800CA;
-  scroll-snap-align: start;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .footer-list {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   list-style: none;
-  width: 100vw;
+  width: 100%;
   padding: 0;
   text-align: center;
 }
@@ -269,22 +316,22 @@ a {
 .footer-list > li:nth-child(1) {
   text-align: left;
   padding: 20px 20px 20px 70px;
-  margin-right: auto;
-  width: 350px;
+  /*margin-right: auto;*/
+  width: auto;
 }
 
 .footer-list > li:nth-child(2) {
   padding: 20px;
-  width: 350px;
-  margin-left: auto;
-  margin-right: auto;
+  width: auto;
+  /*margin-left: auto;
+  margin-right: auto;*/
 }
 
 .footer-list > li:nth-child(3) {
   text-align: right;
   padding: 20px 70px 20px 20px;
-  width: 350px;
-  margin-left: auto;
+  width: auto;
+  /*margin-left: auto;*/
 }
 
 h1 {
@@ -371,6 +418,91 @@ p {
     display: block;
     padding: 0px 0px 0px 0px;
     text-align: center;
+  }
+
+  .contact {
+    padding-bottom: 180px;
+  }
+
+  .contact-text {
+    padding-bottom: 70px;
+  }
+
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .mail-contact {
+    display: inline-block;
+    vertical-align: top;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  .mail-contact > p {
+    display: block;
+    font-size: 1.5em;
+  }
+
+  .mail-contact img {
+    padding: 0;
+    padding-bottom: 10px;
+  }
+
+  .telephone-contact {
+    display: inline-block;
+    vertical-align: top;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .telephone-contact > p {
+    display: block;
+    font-size: 1.5em;
+  }
+
+  .telephone-contact img {
+    padding: 0;
+    padding-bottom: 15px;
+  }
+
+  .footer > ul {
+    text-align: center;
+    font-size: 0.8em;
+  }
+
+  .footer-list {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-list > li:nth-child(1) {
+    text-align: left;
+    padding: 10px 20px;
+    /*margin-right: auto;*/
+    width: auto;
+  }
+  
+  .footer-list > li:nth-child(2) {
+    padding: 10px;
+    width: auto;
+    text-align: center;
+  }
+  
+  .footer-list > li:nth-child(3) {
+    text-align: right;
+    padding: 10px 20px;
+    width: auto;
+    /*margin-left: auto;*/
   }
 
   .welcome-text {
