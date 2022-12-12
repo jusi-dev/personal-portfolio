@@ -7,6 +7,7 @@ body {
     font-size: 100%;
     color: white;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 html {
@@ -14,6 +15,11 @@ html {
 }
 
 /* NAV */
+
+nav {
+  z-index: 10;
+}
+
 .sticky {
     display: flex;
     position: fixed;
@@ -137,9 +143,11 @@ a {
 
 .start > .arrow-down {
   position: absolute;
-  top: 90%;
+  top: 88%;
   width: auto;
-  animation: blinker 2.4s linear infinite;
+  animation: blinker 5s linear infinite;
+  margin: 0 auto;
+  width: 25%;
 }
 
 .arrow-down img {
@@ -148,6 +156,30 @@ a {
   width: 25%;
 }
 
+svg {
+  paint-order: stroke;
+  stroke: #5800CA;
+  stroke-width: 20px;
+  box-shadow: 50px 500px 10px #9043f6;
+  filter: drop-shadow(0 0 5px #9043f6);
+  display: block;
+  margin: 0 auto 2% auto;
+  width: 20%;
+  height: auto;
+}
+
+path {
+  stroke-linecap: butt;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 .background-start {
     position: absolute;
     bottom: 0;
@@ -159,7 +191,7 @@ a {
 
 @keyframes blinker {
   50% {
-    opacity: 0;
+    opacity: 20%;
   }
 }
 
@@ -270,6 +302,26 @@ a {
 .box ul p {
   justify-content: center;
   align-items: center;
+}
+
+.work > p {
+  font-size: 35px;
+  padding-left: 70px;
+  padding-bottom: 120px;
+}
+
+.project-container {
+  display: flex;
+  padding-left: 70px;
+}
+
+.project-container img {
+  flex: 0 0 auto;
+}
+
+.project-text {
+  padding-left: 50px;
+  flex: 1 1 auto;
 }
 
 .contact {
@@ -639,6 +691,10 @@ p {
   }
   .start {
     height: calc(var(--vh, 1vh) * 100);
+  }
+
+  svg {
+    width: 70%;
   }
 }
 

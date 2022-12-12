@@ -4,6 +4,7 @@ const navelem = document.querySelector(".nav-elem");
 const navBar = document.querySelector(".sticky");
 const burgerWrapper = document.querySelector("burger-wrapper");
 const aElements = document.querySelectorAll('ul a.nav-elem');
+const downArrow = document.querySelector('.arrow-down');
 
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
@@ -14,6 +15,10 @@ document.querySelectorAll(".nav-elem").forEach(n => n.addEventListener("click", 
     hamburger.classList.remove("active");
     mainnav.classList.remove("active");
 }))
+
+downArrow.addEventListener("click", () => {
+    document.body.style.overflowY = "scroll";
+})
 
 // loop through all the selected `a` elements
 aElements.forEach(aElement => {
