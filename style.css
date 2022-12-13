@@ -145,7 +145,7 @@ a {
   position: absolute;
   top: 88%;
   width: auto;
-  animation: blinker 5s linear infinite;
+  animation: blinker 5.5s linear infinite;
   margin: 0 auto;
   width: 25%;
 }
@@ -160,7 +160,6 @@ svg {
   paint-order: stroke;
   stroke: #5800CA;
   stroke-width: 20px;
-  box-shadow: 50px 500px 10px #9043f6;
   filter: drop-shadow(0 0 5px #9043f6);
   display: block;
   margin: 0 auto 2% auto;
@@ -191,7 +190,7 @@ path {
 
 @keyframes blinker {
   50% {
-    opacity: 20%;
+    opacity: 45%;
   }
 }
 
@@ -605,6 +604,10 @@ p {
   }
   .start {
     height: calc(var(--vh, 1vh) * 100);
+  }
+
+  .background-start {
+    width: 50%;
   }
 
   .initials {

@@ -16,8 +16,21 @@ document.querySelectorAll(".nav-elem").forEach(n => n.addEventListener("click", 
     mainnav.classList.remove("active");
 }))
 
+function disableScrolling() {
+  document.ontouchmove = function(e) {
+    e.preventDefault();
+  }
+}
+
+function enableScrolling() {
+  downArrow.ontouchmove = function(e) {
+    return true;
+  }
+}
+
 downArrow.addEventListener("click", () => {
     document.body.style.overflowY = "scroll";
+    document.body.style.position = "static";
 })
 
 // loop through all the selected `a` elements
