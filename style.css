@@ -117,6 +117,10 @@ a {
     color: #7000FF;
 }
 
+.light-purple {
+  color: #9043f6;
+}
+
 /* COVER */
 
 .start {
@@ -196,7 +200,7 @@ path {
 /* ME */
 
 .me {
-  padding-bottom: 70px;
+  padding-bottom: 55px;
   padding-top: 60px;
 }
 
@@ -318,6 +322,7 @@ path {
   display: flex;
   padding-left: 70px;
   padding-right: 70px;
+  padding-bottom: 50px;
   height: 500px;
 }
 
@@ -483,6 +488,10 @@ p {
     margin: 30px 30px 0px 30px;
   }
 
+  .me {
+    padding-bottom: 20px;
+  }
+
   .myself {
     display: grid;
     margin: 50px 30px 0px 30px;
@@ -524,6 +533,11 @@ p {
     display: block;
     padding: 0px 0px 0px 0px;
     text-align: center;
+    white-space: nowrap;
+  }
+
+  .work {
+    padding-top: 120px;
   }
 
   .work > p {
@@ -545,6 +559,7 @@ p {
     padding-bottom: 30px;
     order: 1;
     height: auto;
+    font-size: 1.15em;
   }
 
   .project-text h4 {
