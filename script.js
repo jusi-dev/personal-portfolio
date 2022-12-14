@@ -5,6 +5,14 @@ const navBar = document.querySelector(".sticky");
 const burgerWrapper = document.querySelector("burger-wrapper");
 const aElements = document.querySelectorAll('ul a.nav-elem');
 const downArrow = document.querySelector('.arrow-down');
+const allAElements = document.querySelectorAll('ul a');
+
+const mePart = document.querySelector(".me")
+const meUl = document.querySelector(".me-ul")
+
+
+var height = window.innerHeight;
+var bottom = height + window.scrollY;
 
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
@@ -16,29 +24,39 @@ document.querySelectorAll(".nav-elem").forEach(n => n.addEventListener("click", 
     mainnav.classList.remove("active");
 }))
 
-function disableScrolling() {
-  document.ontouchmove = function(e) {
-    e.preventDefault();
-  }
-}
-
-function enableScrolling() {
-  downArrow.ontouchmove = function(e) {
-    return true;
-  }
-}
-
 downArrow.addEventListener("click", () => {
     document.body.style.overflowY = "scroll";
     document.body.style.position = "static";
 })
 
+// Add an event listener that listens for the "scroll" event
+window.addEventListener("scroll", function() {
+  if (window.matchMedia("(min-width: 993px)").matches) {
+    if (mePart.getBoundingClientRect().top <= 200) {
+      meUl.style.color = "#9043f6";
+    } else if (mePart.getBoundingClientRect().top <= bottom) {
+      meUl.style.color = "white";
+    }
+  } else if (window.matchMedia("(max-width: 992px)").matches) {
+    if (mePart.getBoundingClientRect().top <= 200) {
+      meUl.style.color = "red";
+    }
+  } else if (window.matchMedia("(max-width: 768px)").matches) {
+    if (mePart.getBoundingClientRect().top <= 200) {
+      meUl.style.color = "red";
+    }
+  } else if (window.matchMedia("(max-width: 600px)").matches) {
+    if (mePart.getBoundingClientRect().top <= 200) {
+      meUl.style.color = "red";
+    }
+  }
+});
+
+
 // loop through all the selected `a` elements
 aElements.forEach(aElement => {
   // attach a `click` event listener to the `a` element
   aElement.addEventListener('click', event => {
-    // select all `a` elements inside the `ul` again
-    const allAElements = document.querySelectorAll('ul a');
 
     // loop through all the selected `a` elements
     allAElements.forEach(a => {
