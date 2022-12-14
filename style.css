@@ -324,11 +324,13 @@ path {
 .project-img {
   display: flex;
   width: 100%;
+  height: auto;
 }
 
 .project-img img {
   width: 100%;
   height: auto;
+  border: solid 3px white;
 }
 
 .project-text {
@@ -543,6 +545,10 @@ p {
     padding-bottom: 30px;
     order: 1;
     height: auto;
+  }
+
+  .project-text h4 {
+    margin-bottom: 15px;
   }
 
   .project-img {
