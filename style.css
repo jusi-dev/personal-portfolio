@@ -318,18 +318,24 @@ path {
   padding-bottom: 120px;
 }
 
+.project-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .project-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(550px, 2fr) 5fr;
   padding-left: 70px;
   padding-right: 70px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   height: 500px;
 }
 
 .project-img {
-  display: flex;
-  width: 100%;
-  height: auto;
+  display: block;
+  max-height: 300px;
+  width: auto;
 }
 
 .project-img img {
@@ -340,7 +346,7 @@ path {
 
 .project-text {
   padding-left: 50px;
-  width: 100%;
+  width: auto;
 }
 
 .project-text h4 {
@@ -480,6 +486,17 @@ p {
     font-weight: 700;
 }
 
+@media only screen and (max-width: 2400px) {
+  .project-wrapper {
+    grid-template-columns: 1fr;
+    padding-bottom: 20px;
+  }
+
+  .project-container {
+    grid-template-columns: minmax(450px, 2fr) 5fr;
+  }
+}
+
 /* SMALL SCREENS AND LAPTOPS */
 @media only screen and (max-width: 992px) {
   .certification {
@@ -547,9 +564,10 @@ p {
   }
 
   .project-container {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     align-items: center;
     text-align: center;
+    height: 550px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -567,7 +585,18 @@ p {
   }
 
   .project-img {
+    display: block;
     order: 2;
+    width: 100%;
+    height: 90%;
+    margin: auto;
+    background-color: blue;
+  }
+
+  .project-img img {
+    max-height: 100%;
+    max-width: auto;
+    object-fit: contain;
   }
 
   .contact {
@@ -766,15 +795,38 @@ p {
   svg {
     width: 70%;
   }
+  
+  .project-img {
+    width: auto;
+    background-color: blue;
+  }
 }
 
 /* MOBILE PHONES */
-@media only screen and (max-width: 576) {
+@media only screen and (max-width: 576px) {
   body {
-    font-size: 60%;
+    font-size: 80%;
   }
   .start {
     height: calc(var(--vh, 1vh) * 100);
+  }
+
+  .project-container {
+    grid-template-rows: auto auto;
+    height: auto;
+    padding-bottom: 70px;
+  }
+
+  .project-img {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+
+  .contact-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
