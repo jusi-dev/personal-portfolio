@@ -7,12 +7,24 @@ const aElements = document.querySelectorAll('ul a.nav-elem');
 const downArrow = document.querySelector('.arrow-down');
 const allAElements = document.querySelectorAll('ul a');
 
-const mePart = document.querySelector(".me")
-const meUl = document.querySelector(".me-ul")
+const mePart = document.querySelector(".me");
+const meUl = document.querySelector(".me-ul");
+
+const impressumFooter = document.querySelector(".footer-list-a");
+const closePopupBtn = document.querySelector(".close-btn");
+const popupWindow = document.getElementById("popup-1");
 
 
 var height = window.innerHeight;
 var bottom = height + window.scrollY;
+
+impressumFooter.addEventListener("click", () => {
+  popupWindow.classList.toggle("active");
+})
+
+closePopupBtn.addEventListener("click", () => {
+  popupWindow.classList.toggle("active");
+})
 
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");

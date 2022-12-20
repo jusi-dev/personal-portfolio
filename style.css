@@ -339,7 +339,7 @@ path {
 }
 
 .project-img img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   border: solid 3px white;
 }
@@ -408,6 +408,73 @@ path {
   padding-right: 30px;
 }
 
+.popup {
+  display: none;
+}
+
+.popup .overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 300vw;
+  background: rgba(0,0,0,0.7);
+  z-index: 10;
+  display: none;
+}
+
+.popup .content-wrapper {
+  position: relative;
+}
+
+.popup .content {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, 50%) scale(0);
+  background: rgb(132,36,255);
+  background: linear-gradient(210deg, rgba(132,36,255,1) 35%, rgba(85,0,193,1) 100%);
+  width: 450px;
+  height: 220px;
+  z-index: 11;
+  text-align: center;
+  color: rgb(238, 229, 229);
+  padding: 55px 5px 120px 5px;
+  border-radius: 10%;
+}
+
+.popup .close-btn {
+  position: absolute;
+  cursor: pointer;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  background: #670cdd;
+  border: 1.5px solid white;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.popup.active {
+  display: block;
+  transition: all 300ms ease-in-out;
+}
+
+.popup.active .overlay {
+  display: block;
+}
+
+.popup.active .content {
+  display: block;
+  transition: all 300ms ease-in-out;
+  transform: translate(-50%, -50%) scale(1);
+}
+
 .footer {
   display: flex;
   width: 100vw;
@@ -427,6 +494,10 @@ path {
   width: 100%;
   padding: 0;
   text-align: center;
+}
+
+.footer-list-a {
+  cursor: pointer;
 }
 
 .footer-list > li:nth-child(1) {
@@ -594,8 +665,7 @@ p {
 
   .project-img img {
     max-height: 100%;
-    max-width: auto;
-    object-fit: contain;
+    width: auto;
   }
 
   .contact {
@@ -797,7 +867,6 @@ p {
   
   .project-img {
     width: auto;
-    background-color: blue;
   }
 }
 
@@ -826,6 +895,15 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .popup .content {
+    padding: 20px 10px 50px 10px;
+    width: 250px;
+  }
+
+  .popup.active .content {
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 
