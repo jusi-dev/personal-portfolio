@@ -290,6 +290,7 @@ path {
 
 .box h3 {
   display: block;
+  margin-bottom: 5px;
 }
 
 .certificates {
@@ -299,6 +300,10 @@ path {
   padding: 0;
   font-size: 1.1em;
   text-align: center;
+}
+
+.certificates > li {
+  cursor: pointer;
 }
 
 .box ul p {
