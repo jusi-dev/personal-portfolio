@@ -311,6 +311,46 @@ path {
   align-items: center;
 }
 
+.skills {
+  padding-top: 80px;
+}
+
+.skills h4 {
+  font-size: 1.9em;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.skills-title {
+  display: inline-block;
+  border-bottom: 4px solid #5800CA;
+  padding: 5px 18px;
+}
+
+.skill-wrapper {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.skill-wrapper p {
+  padding-bottom: 10px;
+  border-bottom: 0;
+}
+
+.skill-box {
+  padding-bottom: 50px;
+}
+
+.skill-box img {
+  height: 90px;
+  width: auto;
+  padding-bottom: 15px;
+}
+
 /* WORK */
 
 .work {
