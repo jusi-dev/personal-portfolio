@@ -7,6 +7,7 @@ body {
     font-size: 100%;
     color: white;
     overflow-x: hidden;
+    transition: 400ms ease-in-out;
 }
 
 html {
@@ -24,11 +25,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-}
-
-.scrolled {
-  transition: 0.3s ease-in-out;
-  background-color: #0E1313;
+    transition: 400ms ease-in-out;
 }
 
 .main-nav {
@@ -111,6 +108,27 @@ a {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: white;
+}
+
+.lightMode {
+  background-color: white;
+  color: #333333;
+  border-color: yellow;
+}
+
+.lightModeText {
+  color: #333333;
+}
+
+#lightmode-btn {
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+
+#darkmode-btn {
+  cursor: pointer;
+  display: none;
+  transition: 300ms ease-in-out;
 }
 
 .purple {
@@ -222,7 +240,7 @@ path {
 
 .myself {
   display: grid;
-  margin: 80px 70px 0px 70px;
+  margin: 80px 130px 0px 130px;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -270,7 +288,7 @@ path {
   grid-template-columns: 1fr 1fr 1fr;
   border: 10px solid #7000FF;
   border-radius: 24px;
-  margin: 60px 70px 0px 70px;
+  margin: 60px 130px 0px 130px;
   height: auto;
 }
 
@@ -359,7 +377,7 @@ path {
 
 .work > p {
   font-size: 35px;
-  padding-left: 70px;
+  padding-left: 130px;
   padding-bottom: 100px;
 }
 
@@ -372,8 +390,10 @@ path {
   display: grid;
   grid-template-columns: minmax(550px, 2fr) 5fr;
   align-items: center;
-  padding-left: 70px;
-  padding-right: 70px;
+  /* padding-left: 70px;
+  padding-right: 70px; */
+  padding-left: 130px;
+  padding-right: 130px;
   padding-bottom: 130px;
   height: 100%;
 }
@@ -576,8 +596,13 @@ path {
   text-align: center;
 }
 
+.footer-list li {
+  color: white;
+}
+
 .footer-list-a {
   cursor: pointer;
+  color: white;
 }
 
 .footer-list > li:nth-child(1) {
