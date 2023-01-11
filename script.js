@@ -13,10 +13,13 @@ const skillSection = document.querySelector('#skill-section');
 const startPart = document.querySelector("#start");
 const mePart = document.querySelector("#me");
 const workPart = document.querySelector("#work");
+const workP = document.querySelector(".work-text")
 const contactPart = document.querySelector("#contact");
 const meUl = document.querySelector(".me-ul");
 const workUl = document.querySelector(".work-ul");
 const contactUl = document.querySelector(".contact-ul");
+const projectContainer = document.querySelectorAll(".project-container");
+const viewSiteBtn = document.querySelectorAll(".view-site");
 
 const aboutMe = document.querySelector(".about-me");
 
@@ -231,6 +234,7 @@ const iconObserver = new IntersectionObserver((entries) => {
   for (const entry of entries) {
     if (entry.isIntersecting) {
       entry.target.classList.add('animate__fadeInUp');
+      entry.target.style.visibility = 'visible';
     }
   }
 }, {
@@ -242,8 +246,17 @@ const animationObserver = new IntersectionObserver((entries) => {
   for (const entry of entries) {
     if (entry.isIntersecting) {
       if (entry.target === mePart) {
-        entry.target.classList.add('animate__fadeIn')
+        entry.target.classList.add('animate__fadeIn');
         mePart.style.visibility = 'visible';
+      } else if (entry.target === workP) {
+        entry.target.classList.add('animate__fadeIn');
+        workP.style.visibility = 'visible';
+      } else if (entry.target === contactPart) {
+        entry.target.classList.add('animate__fadeIn');
+        contactPart.style.visibility = 'visible';
+      } else if (entry.target.classList.contains('project-container')) {
+        entry.target.classList.add('animate__fadeIn');
+        entry.target.style.visibility = 'visible';
       }
     }
   }
@@ -257,9 +270,11 @@ observer.observe(mePart);
 observer.observe(workPart);
 observer.observe(contactPart);
 
-console.log("Test")
 iconRow1.forEach(element => iconObserver.observe(element));
 iconRow2.forEach(element => iconObserver.observe(element));
 iconRow3.forEach(element => iconObserver.observe(element));
 
 animationObserver.observe(mePart);
+animationObserver.observe(workP);
+animationObserver.observe(contactPart);
+projectContainer.forEach(element => animationObserver.observe(element));

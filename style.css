@@ -366,6 +366,7 @@ path {
 
 .skill-box {
   padding-bottom: 50px;
+  visibility: hidden;
 }
 
 .skill-box img {
@@ -378,6 +379,7 @@ path {
 
 .work {
   padding-top: 150px;
+  visibility: hidden;
 }
 
 .work > p {
@@ -464,6 +466,7 @@ path {
   width: 100vw;
   height: 60vh;
   padding-top: 110px;
+  visibility: hidden;
 }
 
 .contact-text {
@@ -878,6 +881,10 @@ p {
   }
   .start {
     height: calc(var(--vh, 1vh) * 100);
+  }
+
+  .animate__animated.animate__fadeIn {
+    --animate-duration: 1s;
   }
 
   .background-start {
