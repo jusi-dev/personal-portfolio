@@ -59,7 +59,7 @@ lightModeBtn.addEventListener("click", () => {
   };
   document.body.classList.add("lightMode");
   navelem.forEach(elem => {
-    elem.classList.add("lightModeText");
+    elem.style.color = '#333333';
   });
 
   burgerBar.forEach(elem => {
@@ -91,7 +91,7 @@ darkModeBtn.addEventListener("click", () => {
   };
   document.body.classList.remove("lightMode");
   navelem.forEach(elem => {
-    elem.classList.remove("lightModeText");
+    elem.style.color = 'white';
   });
   
   purple.forEach(purple => {
@@ -120,6 +120,9 @@ closePopupBtn.addEventListener("click", () => {
 /*                                    */
 
 hamburger.addEventListener("click", () => {
+    navelem.forEach(elem => {
+      elem.style.color = 'white';
+    });
     hamburger.classList.toggle("active");
     mainnav.classList.toggle("active");
 });
