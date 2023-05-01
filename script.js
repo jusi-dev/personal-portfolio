@@ -100,7 +100,7 @@ darkModeBtn.addEventListener("click", () => {
 
   aElement.forEach(elem => {
     elem.classList.remove("lightModeText");
-  })
+  });
 })
 
 /*                                    */
